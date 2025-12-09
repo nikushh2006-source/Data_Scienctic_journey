@@ -1,0 +1,14 @@
+10
+20
+NaN
+40
+NaN
+
+linear
+
+1-presurve data integrity
+2-smooth trends
+3-avoid data loss
+
+
+.interpolate()

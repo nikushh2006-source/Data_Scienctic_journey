@@ -1,6 +1,7 @@
 # ------------------------------------------------
 # Expense Tracker
 # ------------------------------------------------
+import json
 Expenses =[]
 print("Welcome to Expense Tracker :")
 
@@ -76,3 +77,14 @@ while True:
         break
     else:
         print("\n Invalid choice . Please try again .")    
+
+
+
+
+# Save
+with open("expenses.png", "w") as f:
+    json.dump(Expenses, f)
+
+# Load
+with open("expenses.png", "r") as f:
+    Expenses = json.load(f)
